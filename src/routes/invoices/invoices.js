@@ -1,5 +1,5 @@
 import { getInvoices } from "../../data/Data";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import styles from "./invoices.module.css";
 import Footer from "../../components/Footer/Footer";
 function Invoices() {
@@ -9,13 +9,18 @@ function Invoices() {
       <main className={styles.container}>
         <div className={styles.invoices}>
           {invoices.map((invoice) => (
-            <Link
+            <NavLink
               to={`/invoices/${invoice.number}`}
               key={invoice.number}
               className={styles.invoice_link}
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "#9a8c98" : "",
+                };
+              }}
             >
               {invoice.name}
-            </Link>
+            </NavLink>
           ))}
         </div>
 
