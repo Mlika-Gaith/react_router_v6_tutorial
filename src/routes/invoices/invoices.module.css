@@ -1,5 +1,5 @@
 .container {
-  background-color: #ffffff;
+  background-color: #ffff;
   margin: 50px;
   padding: 50px;
   display: flex;
@@ -8,10 +8,8 @@
 }
 .invoices {
   height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 250px;
+  text-align: center;
   border: 2px solid #3d405b;
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
@@ -23,6 +21,13 @@
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.2);
   margin-right: 10px;
 }
+.invoice_items {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .invoice_link {
   text-decoration: none;
   display: flex;
@@ -32,4 +37,20 @@
   cursor: pointer;
   color: inherit;
   width: 100%;
+}
+.search_area {
+  padding: 20px;
+}
+.search_area input {
+  padding: 10px 15px;
+  border: 2px solid #3d405b;
+  border-radius: 8px;
+  outline: none;
+  color: #3d405b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  transition: all 0.1s;
+}
+.search_area input:focus {
+  border-color: #e63946;
 }
