@@ -1,7 +1,6 @@
 import { getInvoices } from "../../data/Data";
 import { NavLink, Outlet, useSearchParams } from "react-router-dom";
 import styles from "./invoices.module.css";
-import Footer from "../../components/Footer/Footer";
 function Invoices() {
   let invoices = getInvoices();
   let [searchParams, setSearchParams] = useSearchParams();
@@ -50,7 +49,6 @@ function Invoices() {
 
         <Outlet />
       </main>
-      <Footer />
     </>
   );
 }
