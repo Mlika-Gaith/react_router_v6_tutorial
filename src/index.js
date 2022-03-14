@@ -1,14 +1,23 @@
-import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Expenses from "./routes/expenses/expenses";
+import Invoices from "./routes/invoices/invoices";
 import "./index.css";
 import App from "./App";
-
-const rootElement = document.getElementById("root");
+import NoMatch from "./routes/nomatch/Nomatch";
+import Invoice from "./components/Invoice/Invoice";
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route path="/expenses" element={<Expenses />} />
+        <Route path="/invoices" element={<Invoices />}>
+          <Route path=":invoiceId" element={<Invoice />} />
+        </Route>
+        <Route path="*" element={<NoMatch />} />
+      </Route>
+    </Routes>
   </BrowserRouter>,
-  rootElement
+  document.getElementById("root")
 );
