@@ -1,0 +1,37 @@
+:root {
+  --navbar_text_clr: #3d405b;
+}
+.navbar {
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  font-family: "Lobster", cursive;
+  padding-left: 80px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: var(--navbar_text_clr);
+  flex: 4;
+  cursor: pointer;
+}
+.nav_links {
+  flex: 2;
+  display: flex;
+}
+.nav_links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+.nav_links li {
+  margin-left: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--navbar_text_clr);
+  cursor: pointer;
+}
