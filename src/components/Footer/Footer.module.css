@@ -1,0 +1,17 @@
+.footer {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  color: #3d405b;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.footer i {
+  color: #e63946;
+}

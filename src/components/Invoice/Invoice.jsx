@@ -5,7 +5,7 @@ function Invoice() {
   let params = useParams();
   let invoice = getInvoice(parseInt(params.invoiceId, 10));
   return (
-    <main className={styles.invoice_container}>
+    <div className={styles.invoice_container}>
       <div className={styles.invoice_info}>
         <h2>Total due : {invoice.amount}</h2>
         <p>
@@ -13,7 +13,7 @@ function Invoice() {
         </p>
         <p>Due date :{invoice.due}</p>
       </div>
-    </main>
+    </div>
   );
 }
 export default Invoice;
