@@ -1,4 +1,4 @@
-import styles from "./Nomatch.module.css";
+import styles from "./nomatch.module.css";
 function NoMatch() {
   return (
     <div className={styles.container}>
