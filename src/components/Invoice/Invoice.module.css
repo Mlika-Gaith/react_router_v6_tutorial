@@ -25,3 +25,8 @@
   font-weight: 800;
   color: #212529;
 }
+.btn_container {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
