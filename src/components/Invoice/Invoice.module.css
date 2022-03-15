@@ -1,6 +1,6 @@
 .invoice_container {
-  height: 500px;
-  width: 250px;
+  height: 450px;
+  width: 300px;
   padding: 20px 30px;
   display: flex;
   flex-direction: column;

@@ -5,7 +5,7 @@ function Navbar() {
     <div className={styles.navbar}>
       <div className={styles.logo}>
         <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-          <h1>Book Keeper</h1>
+          <h1>Invoices & Expenses</h1>
         </Link>
       </div>
       <div className={styles.nav_links}>

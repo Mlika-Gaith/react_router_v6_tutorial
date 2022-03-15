@@ -1,12 +1,8 @@
 .expense_container {
   background-color: #ffffff;
   margin-left: 20px;
-  height: 400px;
+  height: 450px;
   width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 20px;
   color: #3d405b;
   flex-wrap: wrap;
   font-family: "Open Sans", sans-serif;
@@ -17,6 +13,11 @@
   border-radius: 4px;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.2);
 }
+.expense_container h2,
+p {
+  padding: 20px 0px 10px 20px;
+}
 .expense_container h2 {
   font-size: 18px;
+  text-decoration: underline;
 }

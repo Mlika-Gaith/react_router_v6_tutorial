@@ -7,8 +7,9 @@
   justify-content: center;
 }
 .invoices {
-  height: 500px;
-  width: 250px;
+  background-color: aliceblue;
+  height: 450px;
+  width: 300px;
   text-align: center;
   border: 2px solid #3d405b;
   border-radius: 5px;
@@ -17,7 +18,7 @@
   text-transform: capitalize;
   color: #3d405b;
   font-size: 20px;
-  padding: 20px 80px;
+  padding: 20px;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.2);
   margin-right: 10px;
 }
@@ -44,7 +45,7 @@
 .search_area input {
   padding: 10px 15px;
   border: 2px solid #3d405b;
-  border-radius: 8px;
+  border-radius: 4px;
   outline: none;
   color: #3d405b;
   font-family: "Open Sans", sans-serif;

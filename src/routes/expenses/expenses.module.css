@@ -1,5 +1,4 @@
 .container {
-  background-color: red;
   margin: 20px;
   padding: 40px;
   display: flex;
@@ -24,16 +23,12 @@
   margin: 20px;
   margin-bottom: 50px;
   padding: 20px;
-  background-color: aqua;
 }
 .expenses {
-  height: 400px;
+  height: 450px;
   width: 300px;
+  text-align: center;
   background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: #3d405b;
   flex-wrap: wrap;
   font-family: "Open Sans", sans-serif;
@@ -43,6 +38,24 @@
   border: 2px solid #3d405b;
   border-radius: 4px;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.2);
+}
+.search_area {
+  padding: 20px;
+}
+.search_area input {
+  padding: 10px 15px;
+  border: 2px solid #3d405b;
+  color: #3d405b;
+  background-color: #ffffff;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.expenses_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .expense_link {
   text-decoration: none;
