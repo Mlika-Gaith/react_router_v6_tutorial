@@ -46,3 +46,6 @@ export function getExpenses() {
 export function getExpense(number) {
   return expenses.find((expense) => expense.number === number);
 }
+export function deleteExpense(number) {
+  return (expenses = expenses.filter((expense) => expense.number !== number));
+}

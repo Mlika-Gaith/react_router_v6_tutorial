@@ -3,21 +3,25 @@
   margin-left: 20px;
   height: 450px;
   width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: #3d405b;
   flex-wrap: wrap;
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   border: 2px solid #3d405b;
   border-radius: 4px;
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.2);
 }
-.expense_container h2,
-p {
-  padding: 20px 0px 10px 20px;
+.expense_container p {
+  padding: 10px;
 }
-.expense_container h2 {
-  font-size: 18px;
-  text-decoration: underline;
+.btn {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 10px;
 }
