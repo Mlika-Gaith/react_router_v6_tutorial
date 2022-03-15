@@ -1,6 +1,6 @@
 import styles from "./expenses.module.css";
 import { getExpenses } from "./../../data/expenses";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 function Expenses() {
   let expenses = getExpenses();
   return (
@@ -13,7 +13,7 @@ function Expenses() {
         <div className={styles.expenses}>
           {expenses.map((expense) => (
             <NavLink
-              to={`expenses\${expense.number}`}
+              to={`/expenses/${expense.number}`}
               key={expense.number}
               className={styles.expense_link}
             >
@@ -21,6 +21,7 @@ function Expenses() {
             </NavLink>
           ))}
         </div>
+        <Outlet />
       </div>
     </main>
   );

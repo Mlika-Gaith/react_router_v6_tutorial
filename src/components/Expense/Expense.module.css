@@ -1,0 +1,22 @@
+.expense_container {
+  background-color: #ffffff;
+  margin-left: 20px;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  color: #3d405b;
+  flex-wrap: wrap;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid #3d405b;
+  border-radius: 4px;
+  box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.2);
+}
+.expense_container h2 {
+  font-size: 18px;
+}
