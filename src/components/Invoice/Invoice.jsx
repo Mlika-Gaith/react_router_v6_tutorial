@@ -1,5 +1,5 @@
 import { useParams, useNavigate, useLocation } from "react-router-dom";
-import { getInvoice, deleteInvoice } from "../../data/Data";
+import { getInvoice, deleteInvoice } from "../../data/invoices";
 import Button from "../Button/Button";
 import styles from "./Invoice.module.css";
 function Invoice() {

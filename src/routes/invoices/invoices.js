@@ -1,4 +1,4 @@
-import { getInvoices } from "../../data/Data";
+import { getInvoices } from "../../data/invoices";
 import { NavLink, Outlet, useSearchParams } from "react-router-dom";
 import styles from "./invoices.module.css";
 function Invoices() {
