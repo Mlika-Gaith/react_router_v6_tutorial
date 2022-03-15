@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Expenses from "./routes/expenses/expenses";
 import Invoices from "./routes/invoices/invoices";
 import "./index.css";
@@ -12,7 +12,7 @@ import Expense from "./components/Expense/Expense";
 import ExpenseBlank from "./components/Expense/ExpenseBlank";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
@@ -27,6 +27,6 @@ ReactDOM.render(
         <Route path="*" element={<NoMatch />} />
       </Route>
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );
